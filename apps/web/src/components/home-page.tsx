@@ -54,7 +54,7 @@ export default function HomePage() {
             Memory Briefing
           </h1>
           <p className="text-sm text-relay-ink2">
-            Shared context for wispr, Brand Studio, Relume, and Cursor.
+            Shared context for wispr, Brand Studio, relume, and Cursor.
           </p>
         </div>
         <Button variant="outline" onClick={() => void load()}>

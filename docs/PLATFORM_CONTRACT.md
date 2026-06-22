@@ -108,7 +108,7 @@ const { primer } = await memory.getContext();
 
 await memory.addObservations({
   entityName: "Don",
-  contents: ["Prefers Relume-style sitemap → wireframe flow"],
+  contents: ["Prefers relume-style sitemap → wireframe flow"],
   source: "cursor",
 });
 ```
