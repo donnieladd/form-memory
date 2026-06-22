@@ -111,6 +111,24 @@ Open **http://localhost:3020**
 
 See [`docs/SUPABASE_SETUP.md`](docs/SUPABASE_SETUP.md) for connecting Supabase so the agent can deploy for you.
 
+### 7. Deploy UI to Vercel
+
+Import [github.com/donnieladd/form-memory](https://github.com/donnieladd/form-memory) and set **Root Directory** to `apps/web` (or deploy from CLI in that folder). `apps/web/vercel.json` runs `npm install` from the monorepo root.
+
+Add these **server-side** env vars in Vercel (Production + Preview):
+
+```bash
+FORM_MEMORY_URL=https://YOUR_PROJECT_REF.supabase.co/functions/v1/form-memory
+FORM_MEMORY_API_KEY=fm_live_...
+FORM_MEMORY_WORKSPACE_ID=00000000-0000-4000-8000-000000000001
+```
+
+```bash
+cd apps/web
+npx vercel        # preview
+npx vercel --prod # production
+```
+
 ### 6. Cursor MCP (optional)
 
 Cursor does not host memory — it connects to your hosted API via a thin MCP adapter:
