@@ -1,0 +1,28 @@
+# Form Memory — Supabase project
+# Create a dedicated project at https://supabase.com/dashboard then: supabase link
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public", "extensions"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://localhost:3010"
+
+[edge_runtime]
+enabled = true
+
+[functions.form-memory]
+verify_jwt = false

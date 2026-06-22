@@ -1,0 +1,176 @@
+{
+  "project_name": "RELAY by FORM",
+  "theme_and_archetype": {
+    "theme": "Light",
+    "archetype": "Organic & Earthy + Swiss Minimalist (Minimalist Calm Executive)",
+    "description": "RELAY operates as an intelligence layer. The design must feel calm, intentional, intelligent, and operationally clear. It acts as an executive's intelligence brief, avoiding the noisy, cluttered feel of generic SaaS dashboards. Grounded, paper-like surfaces with high-end editorial typography."
+  },
+  "colors": {
+    "background": {
+      "page": "#FAF9F7",
+      "surface": "#FFFFFF",
+      "surface_secondary": "#F3F1EC"
+    },
+    "text": {
+      "primary": "#1A1C19",
+      "secondary": "#595C55",
+      "muted": "#8A8D86"
+    },
+    "border": {
+      "default": "#E6E4E0",
+      "focus": "#1C3026"
+    },
+    "brand": {
+      "primary": "#1C3026",
+      "primary_hover": "#2A4538",
+      "accent": "#C4923E"
+    },
+    "badges": {
+      "urgent": {
+        "bg": "#FCECEA",
+        "text": "#C84C32",
+        "border": "#F3D6D2"
+      },
+      "actionable": {
+        "bg": "#E8EFE8",
+        "text": "#3D5B4B",
+        "border": "#D1E0D4"
+      },
+      "waiting": {
+        "bg": "#FDF6E3",
+        "text": "#B3822B",
+        "border": "#F5E6C4"
+      },
+      "informational": {
+        "bg": "#F0F4F8",
+        "text": "#475E6E",
+        "border": "#D9E2E8"
+      }
+    }
+  },
+  "typography": {
+    "font_imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');"
+    ],
+    "headings": {
+      "font_family": "font-serif ('Cormorant Garamond', serif)",
+      "description": "Used for large editorial headers (Good morning, Dontae), dashboard greetings, marketing hero."
+    },
+    "body": {
+      "font_family": "font-sans ('Manrope', sans-serif)",
+      "description": "Clean, legible geometric sans for data, UI elements, metrics, and general body text."
+    },
+    "hierarchy": {
+      "h1": "font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none text-text-primary",
+      "h2": "font-serif text-2xl sm:text-3xl lg:text-4xl tracking-tight text-text-primary",
+      "h3": "font-sans text-xl sm:text-2xl font-semibold tracking-tight text-text-primary",
+      "h4": "font-sans text-lg sm:text-xl font-medium text-text-primary",
+      "body": "font-sans text-base leading-relaxed text-text-secondary",
+      "labels": "font-sans text-xs tracking-[0.2em] uppercase text-text-muted font-semibold",
+      "data_metric": "font-sans text-3xl font-light text-text-primary tracking-tighter"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_philosophy": "Generous spacing. Allow the UI to breathe like a printed magazine. Use p-8 or p-12 for main containers. Avoid cramped widgets.",
+    "border_radius": "rounded-md (6px). Keeps edges sophisticated and paper-like. Avoid pill shapes unless it is a small badge.",
+    "shadows": {
+      "ambient": "shadow-[0_2px_10px_rgba(0,0,0,0.03)]",
+      "hover": "shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+    },
+    "grid_system": {
+      "marketing": "The 'Bento' Protocol. Asymmetrical grids (grid-cols-12), large hero spans, empty cells for negative space.",
+      "dashboard": "The 'Control Room' Protocol. Strict alignment (grid-cols-1 md:grid-cols-3 lg:grid-cols-4), dense but clear. Every pixel utilized, h-full to match neighbors."
+    }
+  },
+  "page_level_guidelines": {
+    "landing": {
+      "layout": "Asymmetrical hero. 'Paste a link' demo prominently featured above the fold. Editorial large serif headings.",
+      "visuals": "Abstract calm architectural images with a 10% white overlay. Text floats elegantly over it."
+    },
+    "auth": {
+      "layout": "50/50 split screen. Left side: ultra-minimalist login/signup form (white bg). Right side: serene architectural or executive workspace image."
+    },
+    "dashboard": {
+      "greeting": "Massive editorial serif heading: 'Good morning, Dontae.'",
+      "layout": "Top row (grid-cols-3): Summary cards (Today's meetings, Pending follow-ups, Unresolved decisions). Middle: Massive 'Next Meeting Prep' bento card. Bottom/Right: Quick inbox pulse."
+    },
+    "media_intelligence": {
+      "layout": "Two-column bento. Left: Sticky Transcript viewer with timestamps. Right: AI Summary card, Action Items, Chapters. MP3 download in a subtle header action.",
+      "processing_state": "Use an elegant ASCII or text-based loading animation ('The Living Texture'), not a generic spinner."
+    },
+    "meeting_intelligence": {
+      "layout": "Master-detail layout. Left: Calendar list view. Right: Meeting details (Pre-meeting agenda, transcript, decisions).",
+      "styling": "Use subtle colored borders for different meeting types."
+    },
+    "inbox_intelligence": {
+      "layout": "List layout with generous row height.",
+      "features": "Badges for urgency (Urgent, Actionable, Informational, Delegated, Waiting). Draft replies rendered in a 'paper-like' nested card with a 1px border."
+    },
+    "settings": {
+      "layout": "Max-w-3xl centered column. Minimalist list with subtle 1px bottom borders separating items."
+    }
+  },
+  "components": {
+    "cards": {
+      "default": "bg-surface border border-border-default rounded-md shadow-ambient p-6 or p-8."
+    },
+    "inputs": {
+      "style": "bg-transparent border border-border-default rounded-md px-4 py-2 text-text-primary focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all duration-200"
+    },
+    "buttons": {
+      "primary": "bg-brand-primary text-white px-6 py-2.5 rounded-md hover:bg-brand-primary_hover transition-colors font-medium",
+      "secondary": "bg-surface text-text-primary border border-border-default px-6 py-2.5 rounded-md hover:bg-surface_secondary transition-colors font-medium"
+    },
+    "navigation": {
+      "header": "Sticky glassmorphism: backdrop-blur-xl bg-background-page/80 border-b border-border-default z-50."
+    }
+  },
+  "micro_interactions": {
+    "hover": "Cards lift slightly (-translate-y-[1px]) with shadow-hover. Links cross-fade colors.",
+    "links": "Underline expand on hover.",
+    "active": "Scale down slightly (scale-[0.98]) for a tactile feel."
+  },
+  "media": {
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1777449381996-a5fbf83bb5e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGNhbG0lMjBhcmNoaXRlY3R1cmFsJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzgyODM3MjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern building corner, abstract calm architectural",
+        "usage": "Landing page hero background or auth split screen right side."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1769065646832-6513ba9559ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGNhbG0lMjBhcmNoaXRlY3R1cmFsJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzgyODM3MjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Reflection on water, calm architectural",
+        "usage": "Alternative background for marketing sections."
+      }
+    ],
+    "workspace_images": [
+      {
+        "url": "https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Sleek executive office space",
+        "usage": "Auth page right panel or marketing page 'Intelligence for modern work' section."
+      }
+    ],
+    "avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1649433658557-54cf58577c68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHByb2ZpbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzgyODM3MjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional headshot, man with beard",
+        "usage": "User avatar for dashboard ('Dontae')."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1655249481446-25d575f1c054?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHByb2ZpbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzgyODM3MjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional headshot, woman",
+        "usage": "Avatar for contacts in Meeting/Inbox intelligence."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "ALWAYS strictly apply the color palette defined above using Tailwind arbitrary values (e.g., bg-[#FAF9F7]) or extend the tailwind config.",
+    "Do NOT use Inter or Roboto. Apply 'Cormorant Garamond' for large H1/H2 editorial text and 'Manrope' for standard UI/body.",
+    "For the dashboard, use the 'Control Room' grid. Remove generic SaaS clutter. Keep backgrounds light, cards flat white with subtle borders.",
+    "Add data-testid attributes to all interactive and key informational elements (buttons, inputs, links, cards).",
+    "Never use placeholder URLs (like via.placeholder.com). Use the media URLs provided in this file.",
+    "When building Shadcn components, override the Vercel-look. Remove thick rounded pills. Use rounded-md (6px) and 1px borders.",
+    "Dashboard greeting ('Good morning, Dontae.') MUST be large and editorial (serif).",
+    "Ensure generous padding inside cards (p-6 or p-8)."
+  ]
+}

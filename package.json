@@ -1,0 +1,22 @@
+{
+  "name": "form-memory",
+  "version": "0.3.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "mcp",
+    "apps/web"
+  ],
+  "scripts": {
+    "key:generate": "node scripts/generate-api-key.mjs",
+    "mcp": "npm run start --workspace @form/memory-mcp",
+    "web:dev": "npm run dev --workspace @form/memory-web",
+    "web:build": "npm run build --workspace @form/memory-web",
+    "db:reset": "supabase db reset",
+    "functions:serve": "supabase functions serve form-memory --env-file .env.local",
+    "functions:deploy": "supabase functions deploy form-memory"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
